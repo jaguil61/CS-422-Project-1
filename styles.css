@@ -1,0 +1,27 @@
+body {
+    background-color: #2b2a33;
+    color:white;
+    margin: 0; /*lets the nav bar go to the edge*/
+}
+
+/*
+This will center any object 
+that is given this class
+*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.navBar {
+    list-style: none;
+    margin: 0;
+    padding: 1.5% 0;   
+    overflow: hidden;
+    text-align: center;
+    font-size: 180%;
+    height: 3%;
+    background-color:#1c1b22;
+}

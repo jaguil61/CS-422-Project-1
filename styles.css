@@ -30,7 +30,8 @@ that is given this class
 /*the navigation bar at the bottom of the screen*/
 .navbar {
   background-color: #FF5233;
-  list-style-type: none;
+  list-style: none;
+  text-align: center;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -40,15 +41,17 @@ that is given this class
 }
   
 li {
-  float: left;
+  float: center;
+  display: inline;
 }
   
 li a {
   display: block;
   color: white;
-  text-align: center;
+  
   padding: 14px 16px;
   text-decoration: none;
+  display: inline-block;
   /* position: fixed;
   bottom:0px; */
 }

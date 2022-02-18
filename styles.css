@@ -1,8 +1,8 @@
 /*These colors are not the final ones - Jose*/
 body {
-    background-color: #2b2a33;
-    color:white;
-    margin: 0; /*lets the nav bar go to the edge*/
+  background-color: #2b2a33;
+  color:white;
+  margin: 0; /*lets the nav bar go to the edge*/
 }
 
 /*
@@ -10,60 +10,52 @@ This will center any object
 that is given this class
 */
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /*These colors are not the final ones - Jose*/
 .topBar {
-    list-style: none;
-    margin: 0;
-    padding: 1.5% 0;   
-    overflow: hidden;
-    text-align: center;
-    font-size: 180%;
-    height: 3%;
-    background-color:#1c1b22;
+  list-style: none;
+  margin: 0;
+  padding: 1.5% 0;   
+  overflow: hidden;
+  text-align: center;
+  font-size: 180%;
+  height: 3%;
+  background-color:#1c1b22;
 }
 
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    bottom:0px;
-    width: 100%;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom:0px;
+  width: 100%
+}
   
  
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    bottom:0px;
-    
-  }
   
-  li {
-    float: left;
-  }
+li {
+  float: left;
+}
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    /* position: fixed;
-    bottom:0px; */
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* position: fixed;
+  bottom:0px; */
+}
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+li a:hover {
+  background-color: #111;
+}

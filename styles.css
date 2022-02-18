@@ -17,10 +17,10 @@ that is given this class
 }
 
 /*These colors are not the final ones - Jose*/
+/*the bar at the top of the screen*/
 .topBar {
   list-style: none;
-  margin: 0;
-  padding: 1.5% 0;   
+  margin: 0; 
   overflow: hidden;
   text-align: center;
   font-size: 180%;
@@ -28,6 +28,7 @@ that is given this class
   background-color:#1c1b22;
 }
 
+/*the navigation bar at the bottom of the screen*/
 .navbar {
   list-style-type: none;
   margin: 0;

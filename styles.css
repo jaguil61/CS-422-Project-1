@@ -1,69 +1,184 @@
-/*These colors are not the final ones - Jose*/
 body {
-    background-color: #2b2a33;
-    color:white;
-    margin: 0; /*lets the nav bar go to the edge*/
+  background-color: white;
+  color: #2b2a33;
+  margin: 0; /*lets the nav bar go to the edge*/
 }
 
 /*
 This will center any object 
 that is given this class
 */
+
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* height: 20%; */
+  width: 8%;
 }
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* height: 20%; */
+  width: 50%;
+}
+
 
 /*These colors are not the final ones - Jose*/
+/*the bar at the top of the screen*/
 .topBar {
-    list-style: none;
-    margin: 0;
-    padding: 1.5% 0;   
-    overflow: hidden;
-    text-align: center;
-    font-size: 180%;
-    height: 3%;
-    background-color:#1c1b22;
+  background-color:white;
+  border-radius: 10px;
+  border: 4px solid black;
+  list-style: none;
+  margin: 0; 
+  overflow: hidden;
+  text-align: center;
+  font-size: 180%;
+  height: 3%;
 }
 
+/*the navigation bar at the bottom of the screen*/
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    bottom:0px;
-    width: 100%;
-  }
+  background-color:white;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom:0px;
+  width: 100%
+}
   
- 
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    bottom:0px;
-    
-  }
+li {
+  float: center;
+  display: inline;
+}
   
-  li {
-    float: left;
-  }
+li a {
+  display: block;
+  color: black;
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    /* position: fixed;
-    bottom:0px; */
-  }
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+  /* position: fixed;
+  bottom:0px; */
+}
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+li a:hover {
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+.coupCont {
+  background-color: white;
+  border-style: none;
+  padding: 20px 40px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 4px solid black;
+  transition-duration: 0.5s;
+}
+
+button {
+  background-color: white;
+  border-style: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 4px solid black;
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  background-color: white;
+  color: white;
+}
+
+.item8 { grid-area: main; }
+.item1 { grid-area: header; }
+.item2 { grid-area: left; }
+.item3 { grid-area: right; }
+.item4 { grid-area: left1; }
+.item5 { grid-area: right1; }
+.item6 { grid-area: left2; }
+.item7 { grid-area: right2; }
+.item9 { grid-area: a1; }
+.item10 { grid-area: a2; }
+.item11 { grid-area: a3; }
+.item12 { grid-area: a4; }
+.item13 { grid-area: a5; }
+.item14 { grid-area: a6; }
+.item15 { grid-area: a7; }
+.item16 { grid-area: a8; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'main main main main main main'
+    'header header header header header header'
+    'left left left right right right'
+    'left1 left1 left1 right1 right1 right1'
+    'left2 left2 left2 right2 right2 right2';
+    /* 'left left left right right right'; */
+    
+  gap: 12px;
+  background-color:white;
+  padding: 12px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-areas:
+    'main main main main main main'
+    'header header header header header header'
+    'a1 a1 a1 a1 a1 a1 a1'
+    'a2 a2 a2 a2 a2 a2 a2'
+    'a3 a3 a3 a3 a3 a3 a3'
+    'a4 a4 a4 a4 a4 a4 a4'
+    'a5 a5 a5 a5 a5 a5 a5'
+    'a6 a6 a6 a6 a6 a6 a6';
+    /* 'left left left right right right'; */
+    
+  gap: 12px;
+  background-color:white;
+  padding: 12px;
+}
+
+.grid-container2 > div {
+  background-color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+}

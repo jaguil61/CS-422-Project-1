@@ -186,17 +186,27 @@ button:hover {
   float: center;
   flex:1;
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (min-width: 1050px){
   .grid-container, .grid-container div,.grid-container2, .grid-container2 div, .center2, .topBar, .navbar{
     flex-direction:column;
-    width:85%; 
     float:center; 
     font-size: 125%;
   }
 }
-@media only screen and (max-width: 480px) {
+
+@media only screen and (min-width: 400px) and (max-width:1049px){
+  .grid-container, .grid-container div,.grid-container2, .grid-container2 div, .center2, .topBar, .navbar{
+    flex-direction:column;
+   /* width:85%*/; 
+    float:center; 
+    font-size: 125%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .grid-container, .grid-container div,.grid-container2, .grid-container2 div, .center2, .topBar, .navbar {
     flex-direction:column;
-    width:50%; 
+    /*width:50%; */
   }
 }

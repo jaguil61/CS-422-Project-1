@@ -143,8 +143,9 @@ button {
   flex:1;
 }
 
+
 /*This adjusts the content on the screen when the width is 768 (ipad screen size)*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .grid-container, .grid-container div, .grid-container2, .grid-container2 div {
     flex-direction:column;
     float: center; 

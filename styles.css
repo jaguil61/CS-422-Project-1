@@ -37,7 +37,6 @@ that is given this class
   text-align: center;
   font-size: 180%;
   height: 3%;
-  flex:1;
 }
 
 /*the navigation bar at the bottom of the screen*/
@@ -100,14 +99,15 @@ button:hover {
   color: white;
 }
 
-.item8 { grid-area: main; }
+
 .item1 { grid-area: header; }
-.item2 { grid-area: left;}
+.item2 { grid-area: left; }
 .item3 { grid-area: right; }
 .item4 { grid-area: left1; }
 .item5 { grid-area: right1; }
 .item6 { grid-area: left2; }
 .item7 { grid-area: right2; }
+.item8 { grid-area: main; }
 .item9 { grid-area: a1; }
 .item10 { grid-area: a2; }
 .item11 { grid-area: a3; }
@@ -138,7 +138,6 @@ button:hover {
   text-align: center;
   padding: 30px 0;
   font-size: 30px;
-  flex:1;
 }
 
 ::-webkit-scrollbar {
@@ -165,8 +164,8 @@ button:hover {
   grid-template-areas:
     'main main main main main main'
     'header header header header header header'
-    'a1 a1 a1 a1 a1 a1 a1'
-    'a2 a2 a2 a2 a2 a2 a2'
+    'a1 a1 a1 a2 a2 a2'
+    /* 'a2 a2 a2 a2 a2 a2 a2' */
     'a3 a3 a3 a3 a3 a3 a3'
     'a4 a4 a4 a4 a4 a4 a4'
     'a5 a5 a5 a5 a5 a5 a5'
@@ -183,30 +182,4 @@ button:hover {
   text-align: center;
   padding: 30px 0;
   font-size: 30px;
-  float: center;
-  flex:1;
-}
-
-@media only screen and (min-width: 1050px){
-  .grid-container, .grid-container div,.grid-container2, .grid-container2 div, .center2, .topBar, .navbar{
-    flex-direction:column;
-    float:center; 
-    font-size: 125%;
-  }
-}
-
-@media only screen and (min-width: 400px) and (max-width:1049px){
-  .grid-container, .grid-container div,.grid-container2, .grid-container2 div, .center2, .topBar, .navbar{
-    flex-direction:column;
-   /* width:85%*/; 
-    float:center; 
-    font-size: 125%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .grid-container, .grid-container div,.grid-container2, .grid-container2 div, .center2, .topBar, .navbar {
-    flex-direction:column;
-    /*width:50%; */
-  }
 }
